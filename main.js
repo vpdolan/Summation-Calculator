@@ -17,7 +17,7 @@ calBtn.addEventListener('click', function() {
  var theAnswer = numOne + numTwo ; 
 
   answerSlot.textContent = theAnswer;
-};
+});
 
 
 

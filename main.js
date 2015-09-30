@@ -4,22 +4,23 @@ var result = function (x, y) {
 
 
 
-var a = document.querySelector('#num_one');
-var b = document.querySelector('#num_two');
+var numberOneInput = document.querySelector('#num_one');
+var numberTwoInput = document.querySelector('#num_two');
+var calcBtn = document.querySelector ('#calculateBtn');
+var answerSlot = document.querySelector ('#answer');
+
+calBtn.addEventListener('click', function() {
+
+ var numOne = Number(numOneInput.value);
+ var numTwo = Number(numberTwoInput.value);
+ 
+ var theAnswer = numOne + numTwo ; 
+
+  answerSlot.textContent = theAnswer;
+};
 
 
-var num1, num2, sum
 
-var work = function () {
-  num1 = Number(a.value);
-  num2 = Number(b.value); 
-  sum = result(num1, num2);
-  answer.textContent = sum;
-}
-
-
-
-calculateBtn.addEventListener ('click', work);
 
 
  
